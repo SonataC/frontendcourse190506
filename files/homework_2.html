@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            border-left: transparent;
+            border-right: 1px solid grey;
+            border-top: 1px solid grey;
+            margin: auto;
+        }
+        td.w {
+            background-color: white;
+            color: blue;
+        }
+        th, td {
+            border-bottom: 3px solid grey;
+            border-right: 1px solid Grey;
+            height: 30px;
+            padding: 10px;
+            color: grey;
+
+        }
+        body{
+            background-image: url("https://images.fabric.com/images/693/693/CE-276.jpg");
+        }
+        th {
+            background-color: #2c7207ab;
+            color: white;
+
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>
+                First name
+            </th>
+            <th>
+                Last name
+            </th>
+            <th>
+                Savings
+            </th>
+        </tr>
+        <tr>
+            <td>
+                Peter
+            </td>
+            <td>
+                Griffin
+            </td>
+            <td>
+                $100
+            </td>
+        </tr>
+        <tr>
+            <td class="w">
+                Loise
+            </td>
+            <td>
+                Griffin
+            </td>
+            <td>
+                $150
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Joe
+            </td>
+            <td class="w">
+                Swanson
+            </td>
+            <td>
+                $300
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Cleveland
+            </td>
+            <td>
+                Brown
+            </td>
+            <td class="w">
+                $250
+        </tr>
+    </table>
+</body>
+</html>
