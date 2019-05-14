@@ -1,0 +1,80 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+div {
+    border: white solid 5px;
+    box-sizing: border-box;
+}
+.div1 {
+    width: 100%;
+    height: 100%;
+}
+.A {
+    background: greenyellow;
+    width: 75%;
+    height: 10%;
+    float: left;
+    padding: 15px;
+}
+.B {
+    background: greenyellow;
+    width: 25%;
+    height: 10%;
+    float: left;
+    padding: 15px;
+}
+.C {
+    background: yellow;
+    width: 25%;
+    height: 80%;
+    float: left;
+    padding: 15px;
+    overflow: auto;
+}
+.D {
+    background: violet;
+    width: 50%;
+    height: 10%;
+    float: left;
+    padding: 15px;
+}
+.E {
+    background: violet;
+    width: 50%;
+    height: 10%;
+    float: left;
+    padding: 15px;
+}
+.F {
+    background: red;
+    width: 25%;
+    height: 20%;
+    float: right;
+    padding: 15px;
+}
+.G {
+    background: violet;
+    width: 50%;
+    height: 60%;
+    float: left;
+    padding: 15px;
+    overflow: auto;
+}
+.H {
+    background: red;
+    width: 25%;
+    height: 60%;
+    float: right;
+    padding: 15px;
+    overflow: auto;
+}
+.I {
+    background: deepskyblue;
+    width: 100%;
+    height: 10%;
+    float: left;
+    padding: 15px;
+}
