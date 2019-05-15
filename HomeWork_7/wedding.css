@@ -1,3 +1,6 @@
+body{
+    background: #ffb6c173;
+}
 .one {
     color: white;
     text-align: center;
@@ -6,10 +9,91 @@
     left: 50%;
     transform: translate(-50%, -50%);
     box-sizing: border-box;
-    letter-spacing: 2px;
     background: rgba(0, 0, 0, 0.06);
     letter-spacing: 10px;
 }
 h1{
     font-size: 50px;
+    color: white;
+}
+.h{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+.hh{
+    color: black;
+    letter-spacing: 3px;
+
+}
+.two{
+    text-align: center;
+    color: darkgrey;
+    letter-spacing: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 30px;
+}
+.three{
+    text-align: justify;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    letter-spacing: 2px;
+}
+.four{
+    margin: 10px 0;
+    float: left;
+    width: 49.9%;
+    text-align: center;
+    line-height: 1.5;
+    color: black;
+    box-sizing: border-box;
+}
+.five.color{
+    text-align: center;
+    letter-spacing: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: rgba(213, 163, 238, 0.41);
+}
+button{
+    background: #000;
+    color: white;
+    padding: 20px;
+    letter-spacing: 2px;
+    border-radius: 15px;
+    display: inline-block;
+    margin: 5% 43%;
+
+    text-align: center;
+}
+button:hover{
+    background: lightsteelblue;
+    color: #000;
+}
+.six{
+    background: hotpink;
+    color: white;
+    padding: 20px 50px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 40px 20px;
+}
+.last{
+    background: white;
+    padding: 30px;
+}
+footer{
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+a{
+    color: white;
+}
+a:hover{
+    color: green;
 }
