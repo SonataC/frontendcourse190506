@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="homework_10.css">
+</head>
+<body>
+<div id="main">
+    <div class="grey">
+    <div class="input">
+        <form action="#">
+        Title &nbsp;
+            <input type="text" list="title" name="title" placeholder="Select or choose your own" required>
+            <datalist id="title">
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+            </datalist>
+            <br><br>
+        Name&nbsp;
+            <input type="text" name="name" placeholder="John Doe" required><br><br>
+        Phone number&nbsp;
+            <input type="number" name="phone" pattern="[+][0-9]-[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]" placeholder="+1 23456789">
+            &nbsp;(optional)<br><br>
+        Email address&nbsp;
+            <input type="email" name="email" value="add@sdaad" required><br><br>
+        Your website&nbsp;
+            <input type="url" name="url" placeholder="www.yoursite.com">&nbsp;(optional)<br><br>
+        Nr. of items to order&nbsp;
+            <input type="number" name="number" value="6" min="1" max="10" required>&nbsp;(1-10)<br><br>
+        Length&nbsp;
+            <input type="range" name="range" value="1" min="1" max="10" required >&nbsp;1m(in 10cm increments)<br><br>
+        Delivery date&nbsp;
+            <input type="date" name="date" value="275760-08-27" min="2010-12-16" required>&nbsp;(minimum 16 December 2010)<br><br>
+        Time of delivery&nbsp;
+            <input type="time" name="time" step="1800" required>&nbsp;(in 30 min increments)<br><br>
+        Color of the item&nbsp;
+            <input type="color" name="color" value="#ea4335" required>&nbsp;(default red)<br><br>
+        </form>
+            <div id="submit">
+            <input type="submit"><br>
+        </div>
+    </div>
+    </div>
+    <div class="search grey">
+       Search &nbsp; <input type="search"> &nbsp;<button>Go</button>
+    </div>
+</div>
+</body>
+</html>
