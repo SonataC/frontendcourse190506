@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
 </head>
 <body>
-<nav>
+<nav class="one">
     <ul id="nav">
         <li>
           <a href="#">
@@ -190,31 +190,7 @@
     </div>
 </section>
 <section class="gmap">
-    <div id="googleMap" style="width:100%;height:400px;"></div>
-
-    <script>
-        function myMap() {
-            var mapProp= {
-                center:new google.maps.LatLng(51.508742,-0.120850),
-                zoom:5,
-            };
-            var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-        }
-    </script>
-
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
-
-    <script>
-        function myMap() {
-            var mapProp= {
-                center:new google.maps.LatLng(51.508742,-0.120850),
-                zoom:5,
-            };
-            var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-        }
-    </script>
-
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.9553520784752!2d21.121599715929506!3d55.72452808054576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e4d960738bf673%3A0xed39e2e3b1c9b0c!2sArena+Pizza!5e0!3m2!1slt!2slt!4v1558598358765!5m2!1slt!2slt" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
 </section>
 <section class="contact">
     <div class="contacts">

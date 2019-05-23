@@ -238,7 +238,7 @@ input{
     width: 100%;
     font-size: 26px;
 }
-button{
+button {
     width: 100%;
     padding: 5px;
     border: none;
@@ -246,7 +246,7 @@ button{
     font-family: inherit;
     font-size: 36px;
 }
-button:hover{
+button :hover{
     background: darkgrey;
 }
 button a{
@@ -268,11 +268,12 @@ footer a{
     color: white;
 }
 /*navigation*/
-body > nav{
+nav.one {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1;
+    display: none;
 }
 #nav {
     width: 100%;
@@ -303,12 +304,9 @@ body>nav:hover{
     background: lightgrey;
     color: #000;
 }
-@media (min-width: 320px) {
-    body>nav{
-        visibility: hidden;
-    }
-}@media (min-width: 768px) {
-    body>nav{
-        visibility: visible;
+
+@media screen and (min-width: 768px) {
+    nav.one{
+        display: block;
     }
 }
