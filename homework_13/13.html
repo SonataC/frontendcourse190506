@@ -3,40 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <title>JS</title>
-    <link rel="stylesheet" href="13.css">
- </head>
+</head>
 <body>
-    <form>
-        <input type="number" id="x" placeholder="x"/>
-        <input type="number" id="y" placeholder="y"/>
-        <br>
-        <button type="button" onClick="perimeter()"/>Perimeter</button>
-        <button type="button" onClick="area()"/>Area</button>
-        <button type="button" onClick="diagonal()"/>Diagonal</button>
-        <p>Result:
-            <span id="result"></span>
-        </p>
-    </form>
-    <script>
-        function perimeter() {
-            num1 = parseInt(document.getElementById("x").value);
-            num2 = parseInt(document.getElementById("y").value);
-            var z = 2 * (num1 + num2);
-            document.getElementById("result").innerHTML = z;
-        }
+<h1>Įveskite stačiakampio aukštį, plotį bei įstrižainę:</h1>
+<input type="number" name="height" id="height">
+<input type="number" name="width" id="width">
+<button onclick="calc()">Calculate</button>
+<br>
+Perimeter:<span id="perimeter"></span>
+<br>
+Area:
+<span id="area"></span>
+<br>
+Diagonal:
+<span id="diagonal"></span>
+<br>
 
-        function area() {
-            num1 = parseInt(document.getElementById("x").value);
-            num2 = parseInt(document.getElementById("y").value);
-            var z = num1 * num2;
-            document.getElementById("result").innerHTML = z;
-        }
-        function diagonal() {
-            num1 = parseInt(document.getElementById("x").value);
-            num2 = parseInt(document.getElementById("y").value);
-            var z = Math.sqrt(num1 * num1 + num2 * num2);
-            document.getElementById("result").innerHTML = z;
-        }
-    </script>
+<script>
+    function perimeter(height, width) {
+        return 2*height + 2*width;
+    }
+    function area(height, width) {
+        return height * width;
+    }
+    function diagonal(height, width) {
+        return Math.sqrt((height*height + width*width))
+    }
+    function calc() {
+        var height = document.getElementById("height").value;
+        var width = document.getElementById("width").value;
+
+        document.getElementById("area").innerHTML = area(height, width);
+        document.getElementById("perimeter").innerHTML = perimeter(height, width);
+        document.getElementById("diagonal").innerHTML = diagonal(height, width);
+    }
+</script>
 </body>
 </html>
