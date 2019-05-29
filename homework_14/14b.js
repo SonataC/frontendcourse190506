@@ -4,8 +4,8 @@ document.getElementById('main1').innerHTML = mas[1];
 document.getElementById('main2').innerHTML = mas[2];
 document.getElementById('main3').innerHTML = mas[3];
 
-function aa() {
+function carSpeed() {
     var s = (mas[2]/1000)/(mas[3]/120);
     return s;
 }
-document.getElementById('kmh').innerHTML = aa().toFixed(0);
+document.getElementById('kmh').innerHTML = carSpeed().toFixed(0);
