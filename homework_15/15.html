@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Chess
+    </title>
+    <link rel="stylesheet" href="15.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="15.js"></script>
+</head>
+<body>
+<table>
+    <tr>
+        <td class="black"  ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="b1" class="round" draggable="true" ondragstart="drag(event)" ></div>
+        </td>
+        <td class="white"></td>
+        <td class="black" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="b2" class="round" draggable="true" ondragstart="drag(event)"></div>
+        </td>
+        <td class="white"></td>
+        <td class="black" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="b3" class="round" draggable="true" ondragstart="drag(event)"></div>
+        </td>
+        <td class="white"></td>
+        <td class="black" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="b4" class="round" draggable="true" ondragstart="drag(event)"></div>
+        </td>
+        <td class="white"></td>
+    </tr>
+    <tr>
+        <td class="white"></td>
+        <td class="black" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="b5" class="round" draggable="true" ondragstart="drag(event)"></div>
+        </td>
+        <td class="white"></td>
+        <td class="black" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="b6" class="round" draggable="true" ondragstart="drag(event)"></div>
+        </td>
+        <td class="white"></td>
+        <td class="black" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="b7" class="round" draggable="true" ondragstart="drag(event)"></div>
+        </td>
+        <td class="white"></td>
+        <td class="black" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="b8" class="round" draggable="true" ondragstart="drag(event)"></div>
+        </td>
+    </tr>
+    <tr>
+        <td class="black" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="b9" class="round" draggable="true" ondragstart="drag(event)"></div>
+        </td>
+        <td class="white"></td>
+        <td class="black" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="b10" class="round" draggable="true" ondragstart="drag(event)"></div>
+        </td>
+        <td class="white"></td>
+        <td class="black" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="b11" class="round" draggable="true" ondragstart="drag(event)"></div>
+        </td>
+        <td class="white"></td>
+        <td class="black" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="b12" class="round" draggable="true" ondragstart="drag(event)"></div>
+        </td>
+        <td class="white"></td>
+    </tr>
+    <tr>
+        <td class="white"></td>
+        <td class="black" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+        <td class="white"></td>
+        <td class="black" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+        <td class="white"></td>
+        <td class="black" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+        <td class="white"></td>
+        <td class="black" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+    </tr>
+    <tr>
+        <td class="black"ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+        <td class="white"></td>
+        <td class="black" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+        <td class="white"></td>
+        <td class="black" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+        <td class="white"></td>
+        <td class="black" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+        <td class="white"></td>
+    </tr>
+    <tr>
+        <td class="white"></td>
+        <td class="black" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="w1" class="round dark" draggable="true" ondragstart="drag(event)"></div>
+        </td>
+        <td class="white"></td>
+        <td class="black" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="w2" class="round dark" draggable="true" ondragstart="drag(event)"></div>
+        </td>
+        <td class="white"></td>
+        <td class="black" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="w3" class="round dark" draggable="true" ondragstart="drag(event)"></div>
+        </td>
+        <td class="white"></td>
+        <td class="black" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="w4" class="round dark" draggable="true" ondragstart="drag(event)"></div>
+        </td>
+    </tr>
+    <tr>
+        <td class="black" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="w5" class="round dark" draggable="true" ondragstart="drag(event)"></div>
+        </td>
+        <td class="white"></td>
+        <td class="black" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="w6" class="round dark" draggable="true" ondragstart="drag(event)"></div>
+        </td>
+        <td class="white"></td>
+        <td class="black" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="w7" class="round dark" draggable="true" ondragstart="drag(event)"></div>
+        </td>
+        <td class="white"></td>
+        <td class="black" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="w8" class="round dark" draggable="true" ondragstart="drag(event)"></div>
+        </td>
+        <td class="white"></td>
+    </tr>
+    <tr>
+        <td class="white"></td>
+        <td class="black" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="w9" class="round dark" draggable="true" ondragstart="drag(event)"></div>
+        </td>
+        <td class="white"></td>
+        <td class="black" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="w10" class="round dark" draggable="true" ondragstart="drag(event)"></div>
+        </td>
+        <td class="white"></td>
+        <td class="black" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="w11" class="round dark" draggable="true" ondragstart="drag(event)"></div>
+        </td>
+        <td class="white"></td>
+        <td class="black" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="w12" class="round dark" draggable="true" ondragstart="drag(event)"></div>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
