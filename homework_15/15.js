@@ -30,6 +30,7 @@ var players = {
         figure12: {name: 'w12', status: 0, playerId: PLAYER_2,},
     }
 };
+
 function getFigureObj(figureId) {
     var figureObj = null;
     for (var k = 0; k < players.PLAYER_1.length; k++) {
@@ -50,6 +51,7 @@ function getFigureObj(figureId) {
     }
     return figureObj;
 }
+
 var figureElements = document.getElementsByClassName('round');
 for (var l = 0; l < figureElements.length; l++) {
     var elem = figureElements[l];
@@ -67,6 +69,7 @@ for (var i = 0; i < black.length; i++) {
         drop(e);
     });
 }
+
 function allowDrop(ev, positionId) {
     ev.preventDefault();
     isDropAllowed = true;
@@ -80,20 +83,20 @@ function allowDrop(ev, positionId) {
         isDropAllowed = false;
     }
 }
+
 var dragged = null;
 var isDropAllowed = false;
+
 function drag(ev) {
     dragged = ev.target;
     ev.dataTransfer.setData("text/plain", ev.target.id);
 }
+
 function drop(ev) {
     ev.preventDefault();
-    if (!isDropAllowed){
+    if (!isDropAllowed) {
         return false;
     }
     var data = ev.dataTransfer.getData("text");
     ev.target.appendChild(document.getElementById(data));
 }
-
-
-
