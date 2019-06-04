@@ -52,9 +52,8 @@ function getFigureObj(figureId) {
 }
 var figureElements = document.getElementsByClassName('round');
 for (var l = 0; l < figureElements.length; l++) {
-    var elem = figureElements[i];
+    var elem = figureElements[l];
     elem.addEventListener('dragstart', function (e) {
-        var figureObj = getFigureObj(this.getAttribute('id')); 
         drag(e);
     });
 }
