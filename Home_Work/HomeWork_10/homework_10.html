@@ -10,25 +10,29 @@
     <div class="grey">
     <div class="input">
         <form action="#">
-        Title &nbsp;
-            <input type="text" list="title" name="title" placeholder="Select or choose your own" required>
-            <datalist id="title">
-                <option>A</option>
-                <option>B</option>
-                <option>C</option>
-            </datalist>
+            <div overflow="hidden">
+                <div style="float:left"><lable for="title">Title</lable></div>
+                <div float="left" ><input type="text" list="title" name="title" placeholder="Select or choose your own" required>
+                    <datalist id="title">
+                        <option>A</option>
+                        <option>B</option>
+                        <option>C</option>
+                    </datalist>
+                </div>
+            </div>
             <br><br>
+<!-- lable name,...-->
         Name&nbsp;
             <input type="text" name="name" placeholder="John Doe" required><br><br>
         Phone number&nbsp;
-            <input type="number" name="phone" pattern="[+][0-9]-[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]" placeholder="+1 23456789">
+            <input type="tel" name="phone" pattern="[+][0-9]-[0-9]{9}" placeholder="+1 23456789">
             &nbsp;(optional)<br><br>
         Email address&nbsp;
             <input type="email" name="email" value="add@sdaad" required><br><br>
         Your website&nbsp;
             <input type="url" name="url" placeholder="www.yoursite.com">&nbsp;(optional)<br><br>
         Nr. of items to order&nbsp;
-            <input type="number" name="number" value="6" min="1" max="10" required>&nbsp;(1-10)<br><br>
+            <input type="number" name="number" value="6" min="1" max="10" step="1" required>&nbsp;(1-10)<br><br>
         Length&nbsp;
             <input type="range" name="range" value="1" min="1" max="10" required >&nbsp;1m(in 10cm increments)<br><br>
         Delivery date&nbsp;

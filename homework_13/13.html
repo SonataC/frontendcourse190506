@@ -6,9 +6,11 @@
 </head>
 <body>
 <h1>Įveskite stačiakampio aukštį, plotį bei įstrižainę:</h1>
+<form id="forma" onsubmit="return false;">
 <input type="number" name="height" id="height">
 <input type="number" name="width" id="width">
-<button onclick="calc()">Calculate</button>
+<button type="submit" onclick="calc()">Calculate</button>
+</form>
 <br>
 Perimeter:<span id="perimeter"></span>
 <br>
@@ -27,7 +29,7 @@ Diagonal:
         return height * width;
     }
     function diagonal(height, width) {
-        return Math.sqrt((height*height + width*width))
+        return Math.sqrt((height*height + width*width));
     }
     function calc() {
         var height = document.getElementById("height").value;

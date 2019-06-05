@@ -28,6 +28,7 @@ h6{
 .lorum{
     font-size: 9px;
     float: left;
+    padding-right: 10px;
 }
 .dog{
     width: 290px;
@@ -44,6 +45,16 @@ h6{
 h5{
     font-size: 11px;
 }
-.categores{
+#categories{
     font-size: 12px;
+    width: 100%;
+}
+#categories li{
+    border-bottom: dotted 1px black;
+    padding-bottom: 2px;
+    list-style-image: url("ob.gif");
+}
+h3{
+    width: 100%;
+    border-bottom: #9f9f9f solid 1px;
 }
