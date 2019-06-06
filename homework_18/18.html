@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>JSON</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-<button type="button" onclick="loadDoc()">Click me!</button>
-<h3>Posts list: </h3>
-<div id="table"></div>
-<table></table>
+<div class="container px-lg-5">
+    <div class="row">
+        <div class="col py-3 px-lg-5 border bg-light">
+            <button onclick="getJson();" type="submit" id="btn" class="btn btn-primary" name="button">Click me!</button>
+            <table class="myTable" id="jsonContainer" >
+            </table>
+        </div>
+    </div>
+</div>
 <script src="18.js"></script>
 </body>
 </html>

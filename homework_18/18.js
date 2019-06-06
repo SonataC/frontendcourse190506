@@ -1,16 +1,25 @@
-function loadDoc() {
-var xmlhttp = new XMLHttpRequest();
-xmlhttp.onreadystatechange = function() {
-    if (this.readyState === 4 && this.status === 200) {
-            var info = JSON.parse(this.responseText);
-            var x;
-            for ( x in info){
-                document.getElementById("table").innerHTML += info[x] + "<br>";
-            }
-        }
+var jsonContainer = document.getElementById('jsonContainer');
+
+
+function getJson(){
+    var ourRequest = new XMLHttpRequest ();
+    ourRequest.open('GET', 'https://jsonplaceholder.typicode.com/posts', true);
+    ourRequest.onload = function(){
+        var ourData = JSON.parse(ourRequest.responseText);
+        renderHTML(ourData);
     };
-    xmlhttp.open("GET", "https://jsonplaceholder.typicode.com/posts", true);
-    xmlhttp.send();
+    ourRequest.send();
 }
 
 
+function renderHTML(data) {
+    var htmlString = "";
+
+    for (var i = 0; i < data.length; i++) {
+        htmlString += "<h1>" + data[i].id + "<h1>";
+        htmlString += "<h3>" + data[i].title + "</h3>";
+        htmlString += "<tr>" + data[i].body + "</tr>" ;
+    }
+    jsonContainer.insertAdjacentHTML('beforebegin', htmlString);
+
+}
