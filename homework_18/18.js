@@ -13,13 +13,28 @@ function getJson(){
 
 
 function renderHTML(data) {
-    var htmlString = "";
 
-    for (var i = 0; i < data.length; i++) {
-        htmlString += "<h1>" + data[i].id + "<h1>";
-        htmlString += "<h3>" + data[i].title + "</h3>";
-        htmlString += "<tr>" + data[i].body + "</tr>" ;
+
+    for (var i = 0; i < 50; i++) {
+
+        const th = document.createElement('th');
+        const tr = document.createElement('tr');
+        const tdBody = document.createElement('td');
+        const tdTitle = document.createElement('td');
+        const user = document.createElement('td');
+
+        th.textContent = data[i].id;
+        tdBody.textContent = data[i].title;
+        tdTitle.textContent = data[i].body;
+        user.textContent = data[i].userId;
+
+
+        jsonContainer.appendChild(tr);
+        tr.appendChild(th);
+        tr.appendChild(user);
+        tr.appendChild(tdBody);
+        tr.appendChild(tdTitle);
+
     }
-    jsonContainer.insertAdjacentHTML('beforebegin', htmlString);
 
 }
