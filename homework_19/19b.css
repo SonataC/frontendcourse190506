@@ -1,0 +1,24 @@
+div{
+    display: inline-block;
+    margin: 5px;
+}
+#rr {
+    background: red;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+#rb {
+    background: blue;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+#rg {
+    background: grey;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
