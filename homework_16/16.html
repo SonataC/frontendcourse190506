@@ -2,11 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Red square</title>
-    <link rel="stylesheet" href="16.css">
+<title>Change</title>
+<link rel="stylesheet" href="16.css">
+
+<style>
+    button {
+        background-color: red;
+        transition: 1s;
+        border: none;
+        outline: none;
+        margin: 5% 25%;
+    }
+    .round {
+        background-color: green;
+        border-radius: 50%;
+    }
+</style>
 </head>
 <body>
-<button onclick="color(this)"></button>
+<button onclick="color(event, this)"></button>
 <script src="16.js"></script>
 </body>
 </html>
