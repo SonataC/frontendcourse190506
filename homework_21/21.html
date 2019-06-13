@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Jquery
+    </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <div class="col align-self-center">
+
+        <div class="item contai">
+            <div class="key">
+                <label for="miestas">Miestas *</label>
+            </div>
+            <div class="value">
+                <input id="miestas" class="city text" type="text" name="city">
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="key">
+                <label for="address">Adresas *</label>
+            </div>
+            <div class="value">
+                <input id="address" class="address text" type="text" name="address">
+                <a class="zipcode_search ml-2" href="#">Search</a>
+            </div>
+        </div>
+
+        <div class="item">
+
+            <div class="key">
+                <label for="zipcode">Pašto kodas </label>
+            </div>
+            <div class="value">
+                <input id="zipcode" class="zipcode text" type="text" name="zipcode">
+
+
+                <div class="zipcode_error" style="display:none">Pašto kodas nerastas</div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script src="21.js"></script>
+</body>
+</html>
